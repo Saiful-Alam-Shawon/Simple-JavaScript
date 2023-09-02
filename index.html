@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Transaction Demo</title>
+</head>
+
+<body class="width">
+    <div>
+        <h1 class="Text text-center heading">Transaction Testing !!!</h1>
+    </div>
+    <div class="box-grid all-grid">
+        <div class="input-box ">
+            <h3 class="Text text-center">মোট জমা</h3>
+            <div class="area area-padding">
+                <h5 class="Text area-font box-style input-box-style-all">৳ <span id="deposit-display">00</span></h5>
+            </div>
+        </div>
+        <div class="input-box">
+            <h3 class="Text text-center">মোট উত্তোলন</h3>
+            <div class="area area-padding">
+                <h5 class="Text area-font box-style input-box-style-all">৳ <span id="credit-display">00</span></h5>
+            </div>
+        </div>
+        <div class="input-box ">
+            <h3 class="Text text-center">সর্বমোট ব্যালেন্স </h3>
+            <div class="area area-padding">
+                <h5 class="Text area-font box-style input-box-style-all">৳ <span id="final-total-display">00</span>
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="text-center input-grid all-grid">
+        <div class="input-box area input-box-margin2">
+            <h4 class="Text text-center">জমা</h4>
+            <input class="input-box-style input-box-style-all Text" id="depositAmount" type="text"
+                placeholder="যত টাকা জমা দিতে চান ">
+            <button class="btn-text btn-margin" id="deposit">জমাদিন</button>
+        </div>
+
+        <div class="input-box area input-box-margin2">
+            <h4 class="Text text-center">উত্তোলন </h4>
+            <div>
+                <input class="input-box-style input-box-style-all Text" id="creditAmount" type="text"
+                    placeholder="যত টাকা তুলতে চান">
+                <button class="btn-text btn-margin" id="credit">উত্তোলন করুন</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="transaction.js"></script>
+</body>
+
+</html>
